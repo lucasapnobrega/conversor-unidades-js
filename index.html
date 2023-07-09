@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+            <h1 class="title">
+                <i class="fa-solid fa-pencil"></i>
+                Conversor de Unidades
+                <i class="fa-solid fa-ruler"></i>
+            </h1>
+            
+        
+        <form action="" class="form">
+            <div class="input-group">
+                <label for="quantity">Digite a quantidade</label>
+                <input type="number" name="quantity" id="quantity" placeholder="0" required class="input-field">
+            </div>
+
+            <div class="input-group">
+                <label for="from">De</label>
+                <select name="from" id="from" class="select">
+                    <option value="km">Quilômetro(s)</option>
+                    <option value="hm">Hectômetro(s)</option>
+                    <option value="dam">Decâmetro(s)</option>
+                    <option value="m">Metro(s)</option>
+                    <option value="dm">Decimétro(s)</option>
+                    <option value="cm">Centímetro(s)</option>
+                    <option value="mm">Milímetro(s)</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="to">Para</label>
+                <select name="to" id="to" class="select">
+                    <option value="km">Quilômetro(s)</option>
+                    <option value="hm">Hectômetro(s)</option>
+                    <option value="dam">Decâmetro(s)</option>
+                    <option value="m">Metro(s)</option>
+                    <option value="dm">Decimétro(s)</option>
+                    <option value="cm">Centímetro(s)</option>
+                    <option value="mm">Milímetro(s)</option>
+                </select>
+            </div>
+
+            <button class="btn">Converter</button>
+
+            <div class="output-group">
+                <label for="output">Resultado:</label>
+                <input type="text" id="output" readonly class="input-field">
+            </div>
+
+            <div class="message"></div>
+
+            <div class="button-group">
+                <button class="copy btn displayNone">Copiar</button>
+                <button class="clean btn displayNone">Limpar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>

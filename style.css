@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+.container {
+    background-color: #221f1f;
+    color: #f1f5f9;
+    border-radius: 1rem;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.3);
+    padding: 2rem;
+    width: 450px;
+}
+
+.title {
+    font-size: 2.6rem;
+    margin-bottom: 1.6rem;
+    text-align: center;
+    transition: all .6s;
+    font-family: 'Amatic SC', cursive;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.title i {
+    font-size: 1.4rem;
+}
+
+.title:hover {
+    color: #4caf50;
+}
+
+
+input:focus {
+    outline: 0;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.input-group label {
+    margin-bottom: 0.6rem;
+    font-weight: bold;
+}
+
+.input-field {
+    background-color: rgb(255, 255, 255);
+}
+
+
+select, input {
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    background-color: #eee;
+}
+
+.btn {
+    background-color: #4caf50;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    opacity: .7;
+    transition: all .6s;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    opacity: 1;
+    color: black;
+}
+
+.output-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.message {
+    font-size: 0.9rem;
+    color: #4caf50;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.error {
+    color: red;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy {
+    display: none;
+    text-align: center;
+}
+
+.copied {
+    background-color: #22c427;
+    opacity: 1; 
+}
+
+.clean {
+    display: none;
+}
+
+
+
+.displayBlock {
+    display: block;
+}
+
+.displayNone {
+    display: none;
+}
+
